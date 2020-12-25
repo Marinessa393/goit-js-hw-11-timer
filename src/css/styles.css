@@ -1,0 +1,116 @@
+body {
+  background-image: url(./img.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 50%;
+}
+
+.timer {
+  text-align: center;
+}
+
+.field {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.field > span {
+  display: block;
+  min-width: 60px;
+  margin: 15px;
+  padding: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  background: rgba(238, 136, 3, 0.87);
+  color: #ffffff;
+  line-height: 70px;
+  border-radius: 4px;
+}
+
+.field > span.label {
+  display: block;
+  background: none;
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  width: auto;
+  margin: 0;
+}
+
+.date {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainTitle {
+  font-family: Vibur, cursive;
+  font-weight: bold;
+  font-size: 60px;
+  color: #ee8803;
+  text-align: center;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  display: block;
+  margin: 17px;
+  padding: 9px;
+  color: #5f3907;
+  min-width: 60px;
+  background-color: white;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px dashed grey;
+  border-radius: 4px;
+}
+
+#dateCounter {
+  width: 286px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px dotted orange;
+  padding: 10px;
+  font-size: 22px;
+  color: #5f3907;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    background-position: bottom;
+    background-size: contain;
+  }
+  .field > span {
+    min-width: 50px;
+    padding: 20px;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .mainTitle {
+    font-size: 50px;
+    color: #c4730a;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
